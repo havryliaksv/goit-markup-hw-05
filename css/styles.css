@@ -116,6 +116,7 @@ body {
   color: var(--header-logo-end-color);
 }
 .header-link {
+  position: relative;
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -136,15 +137,13 @@ body {
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
-.header-item {
-  position: relative;
-}
-.header-item::after {
+.header-link::after {
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
-  content: '';
   display: block;
+
   height: 4px;
   width: 100%;
 
@@ -152,7 +151,7 @@ body {
   border-radius: 2px;
   opacity: 0;
 }
-.header-navigation .header-item.current.header-item::after {
+.header-navigation .header-link.current.header-link::after {
   opacity: 1;
 }
 .header-navigation .header-link.current {
