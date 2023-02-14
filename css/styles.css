@@ -136,9 +136,29 @@ body {
 .header-item:not(:last-child) {
   margin-right: 40px;
 }
-.header-navigation .link.current {
+.header-item {
+  position: relative;
+}
+.header-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  opacity: 0;
+}
+.header-navigation .header-item.current.header-item::after {
+  opacity: 1;
+}
+.header-navigation .header-link.current {
   color: var(--accent-color);
 }
+
 .header-contacts {
   display: flex;
 }
