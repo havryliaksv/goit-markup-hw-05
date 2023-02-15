@@ -513,10 +513,6 @@ body {
 }
 .project-card {
   position: relative;
-
-  width: 100%;
-  height: 300px;
-
   overflow: hidden;
 }
 .project-overlay {
@@ -525,7 +521,7 @@ body {
   left: 0;
 
   width: 100%;
-  height: 300px;
+  height: 100%;
   padding: 40px 32px;
 
   background-color: var(--project-overlay-color);
@@ -537,15 +533,14 @@ body {
   transform: translateY(0);
 }
 .overlay-text {
-  max-width: 296px;
-  max-height: 220px;
+  height: 100%;
 
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--overlay-text-color);
 
-  overflow: hidden;
+  overflow: auto;
 }
 .projects-item-signature {
   padding-top: 23px;
