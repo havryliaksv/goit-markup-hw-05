@@ -71,6 +71,7 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
+
   cursor: pointer;
   border: none;
 }
@@ -119,6 +120,7 @@ body {
 .header-link {
   position: relative;
   display: block;
+
   padding-top: 24px;
   padding-bottom: 24px;
 
@@ -188,13 +190,14 @@ body {
   margin-right: auto;
   padding-top: 188px;
   padding-bottom: 188px;
+
+  text-align: center;
+
   background-color: var(--hero-background-color);
   background-image: var(--line-grad), url(../images/hero-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  text-align: center;
 }
 .hero-title {
   margin-left: auto;
@@ -239,6 +242,7 @@ body {
   content: '';
   display: block;
   height: 112px;
+
   background-color: var(--btn-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -257,12 +261,13 @@ body {
   background-image: url(../images/astronaut.svg);
 }
 .features-subtitle {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
-  margin-bottom: 8px;
 }
 .faetures-text {
   font-size: 16px;
@@ -278,13 +283,14 @@ body {
   flex-wrap: wrap;
 }
 .content-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 72px;
 }
 .content-item {
   width: calc((100% - 2 * 24px) / 3);
@@ -294,9 +300,10 @@ body {
 }
 /*--------------------TEAM-------------------------*/
 .team {
-  background: var(--team-background-color);
   padding-top: 120px;
   padding-bottom: 120px;
+
+  background: var(--team-background-color);
 }
 .team-list {
   display: flex;
@@ -304,6 +311,7 @@ body {
 }
 .team-item {
   width: calc((100% - 3 * 24px) / 4);
+
   background: var(--team-item-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -312,33 +320,37 @@ body {
   margin-right: 24px;
 }
 .team-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 72px;
 }
 .team-subtitle {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--title-color);
-  margin-bottom: 8px;
 }
 .team-text {
+  margin-bottom: 8px;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  margin-bottom: 8px;
 }
 .team-item-signature {
   width: 264px;
   padding: 32px 16px;
+
   border-radius: 0px 0px 4px 4px;
 }
 .team-soc-list {
@@ -356,6 +368,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+
   border-radius: 50%;
   background-color: var(--btn-color);
 }
@@ -372,13 +385,13 @@ body {
   padding-bottom: 120px;
 }
 .customers-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-
-  margin-bottom: 72px;
 }
 .customers-list {
   display: flex;
@@ -394,19 +407,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: var(--customer-icon-color);
+
   border: 1px solid var(--customer-icon-color);
   border-radius: 4px;
-  color: var(--customer-icon-color);
 }
 .customer-link-icon {
   width: 104px;
   height: 56px;
+
   fill: currentColor;
 }
 .customer-link:hover,
 .customer-link:focus {
-  border-color: var(--accent-color);
   color: var(--accent-color);
+
+  border-color: var(--accent-color);
 }
 /*
 .customer-link:hover .customer-link-icon,
@@ -447,15 +464,17 @@ body {
 .projects-btn {
   padding: 12px 24px;
 
-  background: var(--btn-background-color);
   color: var(--btn-color);
+
+  background: var(--btn-background-color);
   border: 1px solid var(--btn-projects-border-color);
   border-radius: 4px;
 }
 .projects-btn:hover,
 .projects-btn:focus {
-  background: var(--accent-color);
   color: var(--btn-accent-color);
+
+  background: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -467,6 +486,7 @@ body {
 }
 .projects-link {
   display: inline-block;
+
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .projects-link:hover,
@@ -478,6 +498,7 @@ body {
   padding-top: 23px;
   padding-bottom: 32px;
   padding-left: 16px;
+
   border: 1px solid var(--header-border-color);
   border-top: none;
 }
@@ -485,6 +506,7 @@ body {
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
+
   background: var(--footer-background-color);
 }
 .footer-logo {
@@ -509,13 +531,13 @@ body {
   color: var(--footer-text-color);
 }
 .footer-text-right {
+  margin-bottom: 16px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--btn-accent-color);
-
-  margin-bottom: 16px;
 }
 .footer-content {
   display: flex;
@@ -535,6 +557,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
+
   border-radius: 50%;
   background-color: var(--soc-media-link-color);
 }
