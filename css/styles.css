@@ -631,8 +631,8 @@ body {
 
   background-color: rgba(46, 47, 66, 0.4);
 
-  transition: opacity 1000ms var(--timeing-function),
-    visibility 1000ms var(--timeing-function);
+  transition: opacity 250ms var(--timeing-function),
+    visibility 250ms var(--timeing-function);
 }
 .modal {
   position: absolute;
@@ -646,7 +646,7 @@ body {
 
   background-color: var(--background-modal-color);
 
-  transition: transform 1000ms var(--timeing-function);
+  transition: transform 250ms var(--timeing-function);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.25);
